@@ -11,6 +11,23 @@ body {
 #presentation .header .title {
   margin-bottom: 35px;
 }
-#presentation .card-action {
+#presentation .social-links {
   margin-top: 50px;
+  padding-bottom: 50px;
+}
+/* taken from http://brand-colors.com/ */
+#twitter {
+  background-color: #55acee;
+}
+#github {
+  background-color: #171515;
+}
+#stackoverflow {
+  background-color: #ef8236;
+}
+#linkedin {
+  background-color: #0e76a8;
+}
+#email {
+  background-color: #db4437;
 }
