@@ -1,4 +1,16 @@
+/* global */
 body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
+}
+
+/* presentation */
+#presentation .header img {
+  margin-top: 35px;
+}
+#presentation .header .title {
+  margin-bottom: 35px;
+}
+#presentation .card-action {
+  margin-top: 50px;
 }
