@@ -19,6 +19,17 @@ h1, h2 {
 h3 {
   font-weight: 300;
 }
+a {
+  color: #FFD740;
+  font-weight: bold;
+}
+a:hover {
+  color: #FFE57F;
+}
+ul, ul li {
+  list-style-position: inside;
+  list-style-type: circle;
+}
 
 /* presentation */
 #presentation {
@@ -59,6 +70,12 @@ h3 {
 }
 
 /* work */
+#work h3 small {
+  font-weight: 200;
+}
+#work .tech-stack {
+  font-style: italic;
+}
 .timeline {
   position: relative;
   padding: 2em 0;
