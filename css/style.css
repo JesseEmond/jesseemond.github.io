@@ -108,7 +108,7 @@ ul, ul li {
   border: 7px solid transparent;
   border-right: 7px solid #00BCD4;
   left: 62px;
-  top: 61px;
+  top: 25px;
 }
 .timeline-block-dates {
   color: black;
@@ -116,4 +116,5 @@ ul, ul li {
 }
 .timeline-block {
   margin-bottom: 75px;
+  position: relative;
 }
