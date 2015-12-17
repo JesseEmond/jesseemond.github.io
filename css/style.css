@@ -103,6 +103,7 @@ ul, ul li {
   margin-left: 75px;
 }
 .timeline-block::before {
+  /* small allow to fake a "message" bubble */
   content: " ";
   position: absolute;
   border: 7px solid transparent;
