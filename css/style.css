@@ -70,6 +70,15 @@ ul, ul li {
 }
 
 /* work */
+#work {
+  padding-right: 0;
+}
+#work h3 {
+  font-size: 2.5em;
+}
+#work h5 {
+  font-size: 1.3em;
+}
 #work h3 small {
   font-weight: 200;
 }
