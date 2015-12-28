@@ -16,7 +16,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <div class="container">
-      <div class="card row">
+      <div class="card">
         <!-- Presentation -->
         <article id="presentation" class="cyan white-text center">
           <!-- Header -->
@@ -204,6 +204,58 @@
             </div>
 
           </div>
+        </article>
+
+        <div class="divider"></div>
+
+        <article id="school-projects">
+          <h2>School Projects</h2>
+
+          <!-- University -->
+          <section class="row">
+            <h3>University</h3>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/primes.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+                    Primality Testing in SPARC Assembly
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <div class="skills">
+                    <div class="chip">SPARC</div>
+                    <div class="chip">asm</div>
+                    <div class="chip">Miller-Rabin</div>
+                  </div>
+                </div>
+                <div id="sparc-primality" class="card-reveal">
+                  <span class="card-title">
+                    Primality Testing in SPARC Assembly
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    Speed competition to find prime numbers in given intervals.
+                    Won 1st place with Miller-Rabin <em>in SPARC assembly</em>.
+                    (0.53s compared to 29.61s for 2nd place), thanks to the usage
+                    of a probabilistic primality testing algorithm (though
+                    adapted to be deterministic for the given range of numbers)
+                    and careful assembly optimization.
+                  </p>
+                  <p>
+                    This was done in a "System Programming" course.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CEGEP -->
+          <section class="row">
+            <h3>CEGEP</h3>
+          </section>
+
         </article>
 
       </div>
