@@ -6,7 +6,7 @@ body {
 .card {
   padding-bottom: 35px;
 }
-section {
+article {
   padding: 25px;
 }
 div .divider {
@@ -87,10 +87,8 @@ ul, ul li {
 }
 .timeline {
   position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
+  padding: 0.5em 0;
   margin-bottom: 2em;
-  margin-left: 15px;
 }
 .timeline::before {
   /* timeline vertical line */
@@ -110,6 +108,7 @@ ul, ul li {
 }
 .timeline-block-content {
   margin-left: 75px;
+  margin-top: 50px;
 }
 .timeline-block::before {
   /* small allow to fake a "message" bubble */
@@ -125,6 +124,5 @@ ul, ul li {
   margin-top: -50px;
 }
 .timeline-block {
-  margin-bottom: 75px;
   position: relative;
 }
