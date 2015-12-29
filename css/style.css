@@ -126,3 +126,8 @@ ul, ul li {
 .timeline-block {
   position: relative;
 }
+
+/* projects */
+.projects .card-image img {
+  height: 350px;
+}

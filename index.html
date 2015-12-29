@@ -212,8 +212,10 @@
           <h2>School Projects</h2>
 
           <!-- University -->
-          <section class="row">
+          <section class="row projects">
             <h3>University</h3>
+
+            <!-- SPARC prime finding -->
             <div class="col s12 m6">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -244,11 +246,58 @@
                     and careful assembly optimization.
                   </p>
                   <p>
+                    The assembly written took advantage of the registers
+                    available to reduce memory accesses, as is expected on a RISC
+                    architecture.
+                  </p>
+                  <p>
                     This was done in a "System Programming" course.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Mario Bros NES Emulation -->
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/mario.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+                    Mario Bros NES Emulation
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <div class="skills">
+                    <div class="chip">NES</div>
+                    <div class="chip">asm</div>
+                  </div>
+                </div>
+                <div id="sparc-primality" class="card-reveal">
+                  <span class="card-title">
+                    Mario Bros NES Emulation
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    (Greatly simplified) clone of Mario Bros with a character
+                    that can run and jump, <em>all in NES assembly</em>.
+                  </p>
+                  <p>
+                    This project made us experiment with the CISC architecture of
+                    a 6502-inspired CPU (CPU in the NES console) to get a good
+                    contrast with the RISC architecture of the SPARC. After
+                    discovering that this CPU lacks a <em>mul</em> instruction,
+                    the character's speed <em>somehow</em> ended up being a power
+                    of 2...
+                  </p>
+                  <p>
+                    This was done as the last project of a "System Programming"
+                    course.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </section>
 
           <!-- CEGEP -->
