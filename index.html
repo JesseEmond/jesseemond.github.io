@@ -55,6 +55,46 @@
           <h2>Work Experience</h2>
           <!-- Timeline -->
           <div class="timeline">
+            <!-- Native Touch internship -->
+            <div class="timeline-block">
+              <img class="circle z-depth-1" src="img/native-touch.png"><!--TODO-->
+              <div class="timeline-block-content card-panel cyan white-text">
+                <p class="timeline-block-dates">Summer 2016</p>
+                <h3>Native Touch <small>(internship)</small></h3>
+                <h5>Platform</h5>
+                <p class="flow-text">
+                  <a href="TODO">Native Touch</a> is a
+                  company that specializes in mobile ads display. It fulfils
+                  ad campaigns through various <a href="TODO">DSPs</a>,
+                  one of which is developped in-house. As part of the platform
+                  team, I helped improve the way that ad requests are filtered
+                  and how bid amounts are evaluated.
+                </p>
+                <ul class="flow-text">
+                  <li>
+                    Develop a click probability prediction (CTR prediction)
+                    machine learning framework to ultimately help optimize the
+                    cost-per-click (CPC) of ad campaigns
+                  </li>
+                  <li>
+                    Refactor ad requests filtering logic into a generic filter
+                    that allows paths to arbitrary Go object fields
+                  </li>
+                  <li>
+                    Parallelize batch-processing script to run &lt; 1h
+                    (from multiple hours)
+                  </li>
+                  <li>
+                    Contribute to <a href="TODO">ansible-modules-core</a>
+                  </li>
+                </ul>
+
+                <p class="flow-text tech-stack">
+                  Python, Go, sklearn
+                </p>
+              </div>
+            </div>
+
             <!-- Autodesk internship -->
             <div class="timeline-block">
               <img class="circle z-depth-1" src="img/autodesk.png">
@@ -68,7 +108,7 @@
                   I was part of the Toolkit team, where we put the Shotgun
                   capabilities right in the artists' hands by integrating
                   directly with their content creation applications
-                  (Maya, Nuke, ...). Most of my contributions were
+                  (Maya, Nuke, ...). Many of my contributions were
                   <a href="https://github.com/shotgunsoftware/">open-source</a>.
                 </p>
                 <ul class="flow-text">
@@ -86,7 +126,7 @@
                   </li>
                   <li>
                     Build support ticket classifier through machine
-                    learning (hackathon project)
+                    learning (hackathon project, 95% accuracy)
                   </li>
                 </ul>
 
@@ -106,8 +146,8 @@
                 <p class="flow-text">
                   <a href="https://www.morganstanley.com/">Morgan Stanley</a>
                   is a multinational financial institution. I was part of the
-                  team that provides services for employees (60,000+ people)
-                  across the company.
+                  team that provides services for 60,000+ employees across the
+                  company.
                 </p>
                 <ul class="flow-text">
                   <li>
@@ -142,8 +182,8 @@
                   videogames company in Montreal with successes such as
                   <a href="https://www.ludia.com/en/games/dragons-rise-of-berk">Dragons: Rise of Berk</a>
                   and
-                  <a href="https://www.ludia.com/en/games/jurassic-worldtm-the-game">Jurassic World</a>
-                  . I worked on tools that are used by artists to produce the
+                  <a href="https://www.ludia.com/en/games/jurassic-worldtm-the-game">Jurassic World</a>.
+                  I worked on tools that are used by artists to produce the
                   game assets for the games.
                 </p>
                 <ul class="flow-text">
@@ -159,8 +199,12 @@
                     3D engine
                   </li>
                   <li>
+                    Introduce unit-tests to the project, which helped to find a
+                    bug in the undo-redo logic
+                  </li>
+                  <li>
                     Add assets search to the central tool (SQLite FTS,
-                    scoring &amp; ranking, bag of words model)
+                    scoring &amp; ranking)
                   </li>
                 </ul>
 
