@@ -15,338 +15,335 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    <div class="container">
-      <div class="card">
-        <!-- Presentation -->
-        <article id="presentation" class="cyan white-text center">
-          <!-- Header -->
-          <div class="header">
-            <img class="circle z-depth-3" src="img/me.jpg">
-            <h1 class="title">Jesse Emond</h1>
+    <div>
+      <!-- Presentation -->
+      <article id="presentation" class="cyan white-text center">
+        <!-- Header -->
+        <div class="header">
+          <img class="circle z-depth-3" src="img/me.jpg">
+          <h1 class="title">Jesse Emond</h1>
+        </div>
+        <!-- Description -->
+        <p class="content flow-text">
+          Software developer with a passion for <br/>
+          <strong class="light-green accent-4">Computer Science <i class="fa fa-flask"></i></strong>,
+          <strong class="deep-purple accent-4">Math <i class="fa fa-superscript"></i></strong>
+          and
+          <strong class="pink accent-2">Nutella <i class="fa fa-heart"></i></strong>.
+        </p>
+        <p class="flow-text">
+          Still looking for the perfect balance
+          <i class="fa fa-balance-scale"></i>.
+        </p>
+      </article>
+
+      <!-- Social -->
+      <article id="social" class="center">
+        <p class="flow-text">Find me on</p>
+        <a href="https://twitter.com/JesseEmond" class="btn-floating btn-large waves-effect waves-light social-link" id="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/JesseEmond" class="btn-floating btn-large waves-effect waves-light social-link" id="github"><i class="fa fa-github"></i></a>
+        <a href="https://stackoverflow.com/users/395386/jesse-emond" class="btn-floating btn-large waves-effect waves-light social-link" id="stackoverflow"><i class="fa fa-stack-overflow"></i></a>
+        <a href="https://www.linkedin.com/in/jesseemond" class="btn-floating btn-large waves-effect waves-light social-link" id="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:emond.jesse@gmail.com" class="btn-floating btn-large waves-effect waves-light social-link" id="email"><i class="fa fa-envelope"></i></a>
+      </article>
+
+      <div class="divider"></div>
+
+      <!-- Work -->
+      <article id="work">
+        <h2>Work Experience</h2>
+        <!-- Timeline -->
+        <div class="timeline">
+          <!-- Native Touch internship -->
+          <div class="timeline-block">
+            <img class="circle z-depth-1" src="img/nativetouch.png">
+            <div class="timeline-block-content card-panel cyan white-text">
+              <p class="timeline-block-dates">Summer 2016</p>
+              <h3>Native Touch <small>(internship)</small></h3>
+              <h5>Platform</h5>
+              <p class="flow-text">
+                <a href="http://nativetouch.com/">Native Touch</a> is a
+                company that specializes in mobile ads display. It runs
+                ad campaigns through various <a href="https://en.wikipedia.org/wiki/Demand-side_platform">DSPs</a>,
+                one of which is developped in-house. As part of the platform
+                team, I helped improve the way that ad requests are filtered
+                and how bid amounts are evaluated.
+              </p>
+              <ul class="flow-text">
+                <li>
+                  Develop a click probability prediction (CTR prediction)
+                  machine learning framework to ultimately help optimize the
+                  cost-per-click (CPC) of ad campaigns
+                </li>
+                <li>
+                  Refactor ad requests filtering logic into a generic filter
+                  that allows paths to arbitrary Go object fields
+                </li>
+                <li>
+                  Parallelize batch-processing script to run &lt; 1h
+                  (from multiple hours)
+                </li>
+                <li>
+                  Contribute to <a href="https://github.com/ansible/ansible-modules-core/pull/4179">ansible-modules-core</a>
+                </li>
+              </ul>
+
+              <p class="flow-text tech-stack">
+                Python, Go, sklearn
+              </p>
+            </div>
           </div>
-          <!-- Description -->
-          <p class="content flow-text">
-            Software developer with a passion for <br/>
-            <strong class="light-green accent-4">Computer Science <i class="fa fa-flask"></i></strong>,
-            <strong class="deep-purple accent-4">Math <i class="fa fa-superscript"></i></strong>
-            and
-            <strong class="pink accent-2">Nutella <i class="fa fa-heart"></i></strong>.
-          </p>
-          <p class="flow-text">
-            Still looking for the perfect balance
-            <i class="fa fa-balance-scale"></i>.
-          </p>
-        </article>
 
-        <!-- Social -->
-        <article id="social" class="center">
-          <p class="flow-text">Find me on</p>
-          <a href="https://twitter.com/JesseEmond" class="btn-floating btn-large waves-effect waves-light social-link" id="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="https://github.com/JesseEmond" class="btn-floating btn-large waves-effect waves-light social-link" id="github"><i class="fa fa-github"></i></a>
-          <a href="https://stackoverflow.com/users/395386/jesse-emond" class="btn-floating btn-large waves-effect waves-light social-link" id="stackoverflow"><i class="fa fa-stack-overflow"></i></a>
-          <a href="https://www.linkedin.com/in/jesseemond" class="btn-floating btn-large waves-effect waves-light social-link" id="linkedin"><i class="fa fa-linkedin"></i></a>
-          <a href="mailto:emond.jesse@gmail.com" class="btn-floating btn-large waves-effect waves-light social-link" id="email"><i class="fa fa-envelope"></i></a>
-        </article>
+          <!-- Autodesk internship -->
+          <div class="timeline-block">
+            <img class="circle z-depth-1" src="img/autodesk.png">
+            <div class="timeline-block-content card-panel cyan white-text">
+              <p class="timeline-block-dates">Fall 2015</p>
+              <h3>Autodesk <small>(internship)</small></h3>
+              <h5>Shotgun, Toolkit</h5>
+              <p class="flow-text">
+                <a href="https://shotgunsoftware.com/">Shotgun</a> is an
+                asset management solution for VFX, animation and games.
+                I was part of the Toolkit team, where we put the Shotgun
+                capabilities right in the artists' hands by integrating
+                directly with their content creation applications
+                (Maya, Nuke, ...). Many of my contributions were
+                <a href="https://github.com/shotgunsoftware/">open-source</a>.
+              </p>
+              <ul class="flow-text">
+                <li>
+                  Develop new app to list assigned tasks &amp; launch an
+                  associated application
+                </li>
+                <li>
+                  Support dynamic registration of apps in the Desktop
+                  application
+                </li>
+                <li>
+                  Develop features on a fictive pipeline to help write a
+                  <a href="http://blog.shotgunsoftware.com/2015/11/two-guys-and-toolkit-week-9.html">blog post</a>
+                </li>
+                <li>
+                  Build support ticket classifier through machine
+                  learning (hackathon project, 95% accuracy)
+                </li>
+              </ul>
 
-        <div class="divider"></div>
-
-        <!-- Work -->
-        <article id="work">
-          <h2>Work Experience</h2>
-          <!-- Timeline -->
-          <div class="timeline">
-            <!-- Native Touch internship -->
-            <div class="timeline-block">
-              <img class="circle z-depth-1" src="img/nativetouch.png">
-              <div class="timeline-block-content card-panel cyan white-text">
-                <p class="timeline-block-dates">Summer 2016</p>
-                <h3>Native Touch <small>(internship)</small></h3>
-                <h5>Platform</h5>
-                <p class="flow-text">
-                  <a href="http://nativetouch.com/">Native Touch</a> is a
-                  company that specializes in mobile ads display. It runs
-                  ad campaigns through various <a href="https://en.wikipedia.org/wiki/Demand-side_platform">DSPs</a>,
-                  one of which is developped in-house. As part of the platform
-                  team, I helped improve the way that ad requests are filtered
-                  and how bid amounts are evaluated.
-                </p>
-                <ul class="flow-text">
-                  <li>
-                    Develop a click probability prediction (CTR prediction)
-                    machine learning framework to ultimately help optimize the
-                    cost-per-click (CPC) of ad campaigns
-                  </li>
-                  <li>
-                    Refactor ad requests filtering logic into a generic filter
-                    that allows paths to arbitrary Go object fields
-                  </li>
-                  <li>
-                    Parallelize batch-processing script to run &lt; 1h
-                    (from multiple hours)
-                  </li>
-                  <li>
-                    Contribute to <a href="https://github.com/ansible/ansible-modules-core/pull/4179">ansible-modules-core</a>
-                  </li>
-                </ul>
-
-                <p class="flow-text tech-stack">
-                  Python, Go, sklearn
-                </p>
-              </div>
+              <p class="flow-text tech-stack">
+                Python, Qt
+              </p>
             </div>
-
-            <!-- Autodesk internship -->
-            <div class="timeline-block">
-              <img class="circle z-depth-1" src="img/autodesk.png">
-              <div class="timeline-block-content card-panel cyan white-text">
-                <p class="timeline-block-dates">Fall 2015</p>
-                <h3>Autodesk <small>(internship)</small></h3>
-                <h5>Shotgun, Toolkit</h5>
-                <p class="flow-text">
-                  <a href="https://shotgunsoftware.com/">Shotgun</a> is an
-                  asset management solution for VFX, animation and games.
-                  I was part of the Toolkit team, where we put the Shotgun
-                  capabilities right in the artists' hands by integrating
-                  directly with their content creation applications
-                  (Maya, Nuke, ...). Many of my contributions were
-                  <a href="https://github.com/shotgunsoftware/">open-source</a>.
-                </p>
-                <ul class="flow-text">
-                  <li>
-                    Develop new app to list assigned tasks &amp; launch an
-                    associated application
-                  </li>
-                  <li>
-                    Support dynamic registration of apps in the Desktop
-                    application
-                  </li>
-                  <li>
-                    Develop features on a fictive pipeline to help write a
-                    <a href="http://blog.shotgunsoftware.com/2015/11/two-guys-and-toolkit-week-9.html">blog post</a>
-                  </li>
-                  <li>
-                    Build support ticket classifier through machine
-                    learning (hackathon project, 95% accuracy)
-                  </li>
-                </ul>
-
-                <p class="flow-text tech-stack">
-                  Python, Qt
-                </p>
-              </div>
-            </div>
-
-            <!-- Morgan Stanley internship -->
-            <div class="timeline-block">
-              <img class="circle z-depth-1" src="img/morganstanley.png">
-              <div class="timeline-block-content card-panel cyan white-text">
-                <p class="timeline-block-dates">Winter 2015</p>
-                <h3>Morgan Stanley <small>(internship)</small></h3>
-                <h5>Enterprise Infrastructure</h5>
-                <p class="flow-text">
-                  <a href="https://www.morganstanley.com/">Morgan Stanley</a>
-                  is a multinational financial institution. I was part of the
-                  team that provides services for 60,000+ employees across the
-                  company.
-                </p>
-                <ul class="flow-text">
-                  <li>
-                    Simplify and improve accessibility of internal website
-                  </li>
-                  <li>
-                    Interact with an Exchange server to save Out-of-Office
-                    configurations
-                  </li>
-                  <li>
-                    Develop multithreaded C# program to synchronize
-                    Out-of-Office configurations with an internal Active
-                    Directory
-                  </li>
-                </ul>
-
-                <p class="flow-text tech-stack">
-                  C#, ASP.NET, Exchange, HTML/CSS/JS
-                </p>
-              </div>
-            </div>
-            
-            <!-- Ludia internship -->
-            <div class="timeline-block">
-              <img class="circle z-depth-1" src="img/ludia.jpg">
-              <div class="timeline-block-content card-panel cyan white-text">
-                <p class="timeline-block-dates">Summer &amp; Spring 2014</p>
-                <h3>Ludia <small>(internship)</small></h3>
-                <h5>Tools</h5>
-                <p class="flow-text">
-                  <a href="https://www.ludia.com/en">Ludia</a> is a mobile
-                  videogames company in Montreal with successes such as
-                  <a href="https://www.ludia.com/en/games/dragons-rise-of-berk">Dragons: Rise of Berk</a>
-                  and
-                  <a href="https://www.ludia.com/en/games/jurassic-worldtm-the-game">Jurassic World</a>.
-                  I worked on tools that are used by artists to produce the
-                  game assets for the games.
-                </p>
-                <ul class="flow-text">
-                  <li>
-                    Improve animation key tools (multiselection, group
-                    modification, more options)
-                  </li>
-                  <li>
-                    Add 3D first-person camera (C++) for the 3D asset editor
-                  </li>
-                  <li>
-                    Fix quaternion bugs in the math library in the internal
-                    3D engine
-                  </li>
-                  <li>
-                    Introduce unit-tests to the project, which helped to find a
-                    bug in the undo-redo logic
-                  </li>
-                  <li>
-                    Add assets search to the central tool (SQLite FTS,
-                    scoring &amp; ranking)
-                  </li>
-                </ul>
-
-                <p class="flow-text tech-stack">
-                  C#, WPF, C++
-                </p>
-              </div>
-            </div>
-
-            <!-- Coveo internship -->
-            <div class="timeline-block">
-              <img class="circle z-depth-1" src="img/coveo.png">
-              <div class="timeline-block-content card-panel cyan white-text">
-                <p class="timeline-block-dates">Summer 2013</p>
-                <h3>Coveo</h3>
-                <h5>Infrastructure</h5>
-                <p class="flow-text">
-                  <a href="http://www.coveo.com/">Coveo</a> provides
-                  enterprise search for companies. I was part of the team in
-                  charge of the infrastructure between the search components,
-                  but I mostly worked on the OCR component.
-                </p>
-                <ul class="flow-text">
-                  <li>
-                    Evaluate and compare Nuance OCR software with Tesseract
-                  </li>
-                  <li>
-                    Migrate and adapt OCR code to a new version that supports
-                    x64
-                  </li>
-                  <li>
-                    Investigate (very) subtle licensing issues with the new
-                    OCR version
-                  </li>
-                </ul>
-
-                <p class="flow-text tech-stack">
-                  C++
-                </p>
-              </div>
-            </div>
-
           </div>
-        </article>
 
-        <div class="divider"></div>
+          <!-- Morgan Stanley internship -->
+          <div class="timeline-block">
+            <img class="circle z-depth-1" src="img/morganstanley.png">
+            <div class="timeline-block-content card-panel cyan white-text">
+              <p class="timeline-block-dates">Winter 2015</p>
+              <h3>Morgan Stanley <small>(internship)</small></h3>
+              <h5>Enterprise Infrastructure</h5>
+              <p class="flow-text">
+                <a href="https://www.morganstanley.com/">Morgan Stanley</a>
+                is a multinational financial institution. I was part of the
+                team that provides services for 60,000+ employees across the
+                company.
+              </p>
+              <ul class="flow-text">
+                <li>
+                  Simplify and improve accessibility of internal website
+                </li>
+                <li>
+                  Interact with an Exchange server to save Out-of-Office
+                  configurations
+                </li>
+                <li>
+                  Develop multithreaded C# program to synchronize
+                  Out-of-Office configurations with an internal Active
+                  Directory
+                </li>
+              </ul>
 
-        <article id="school-projects">
-          <h2>School Projects</h2>
+              <p class="flow-text tech-stack">
+                C#, ASP.NET, Exchange, HTML/CSS/JS
+              </p>
+            </div>
+          </div>
 
-          <!-- University -->
-          <section class="row projects">
-            <h3>University</h3>
+          <!-- Ludia internship -->
+          <div class="timeline-block">
+            <img class="circle z-depth-1" src="img/ludia.jpg">
+            <div class="timeline-block-content card-panel cyan white-text">
+              <p class="timeline-block-dates">Summer &amp; Spring 2014</p>
+              <h3>Ludia <small>(internship)</small></h3>
+              <h5>Tools</h5>
+              <p class="flow-text">
+                <a href="https://www.ludia.com/en">Ludia</a> is a mobile
+                videogames company in Montreal with successes such as
+                <a href="https://www.ludia.com/en/games/dragons-rise-of-berk">Dragons: Rise of Berk</a>
+                and
+                <a href="https://www.ludia.com/en/games/jurassic-worldtm-the-game">Jurassic World</a>.
+                I worked on tools that are used by artists to produce the
+                game assets for the games.
+              </p>
+              <ul class="flow-text">
+                <li>
+                  Improve animation key tools (multiselection, group
+                  modification, more options)
+                </li>
+                <li>
+                  Add 3D first-person camera (C++) for the 3D asset editor
+                </li>
+                <li>
+                  Fix quaternion bugs in the math library in the internal
+                  3D engine
+                </li>
+                <li>
+                  Introduce unit-tests to the project, which helped to find a
+                  bug in the undo-redo logic
+                </li>
+                <li>
+                  Add assets search to the central tool (SQLite FTS,
+                  scoring &amp; ranking)
+                </li>
+              </ul>
 
-            <!-- SPARC prime finding -->
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/primes.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator">
-                    Primality Testing in SPARC Assembly
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <div class="skills">
-                    <div class="chip">SPARC</div>
-                    <div class="chip">asm</div>
-                    <div class="chip">Miller-Rabin</div>
-                  </div>
-                </div>
-                <div id="sparc-primality" class="card-reveal">
-                  <span class="card-title">
-                    Primality Testing in SPARC Assembly
-                    <i class="material-icons right">close</i>
-                  </span>
-                  <p>
-                    Speed competition to find prime numbers in given intervals.
-                    Won 1st place with Miller-Rabin <em>in SPARC assembly</em>.
-                    (0.53s compared to 29.61s for 2nd place), thanks to the usage
-                    of a probabilistic primality testing algorithm (though
-                    adapted to be deterministic for the given range of numbers)
-                    and careful assembly optimization.
-                  </p>
-                  <p>
-                    The assembly written took advantage of the registers
-                    available to reduce memory accesses, as is expected on a RISC
-                    architecture.
-                  </p>
-                  <p>
-                    This was done in a "System Programming" course.
-                  </p>
+              <p class="flow-text tech-stack">
+                C#, WPF, C++
+              </p>
+            </div>
+          </div>
+
+          <!-- Coveo internship -->
+          <div class="timeline-block">
+            <img class="circle z-depth-1" src="img/coveo.png">
+            <div class="timeline-block-content card-panel cyan white-text">
+              <p class="timeline-block-dates">Summer 2013</p>
+              <h3>Coveo</h3>
+              <h5>Infrastructure</h5>
+              <p class="flow-text">
+                <a href="http://www.coveo.com/">Coveo</a> provides
+                enterprise search for companies. I was part of the team in
+                charge of the infrastructure between the search components,
+                but I mostly worked on the OCR component.
+              </p>
+              <ul class="flow-text">
+                <li>
+                  Evaluate and compare Nuance OCR software with Tesseract
+                </li>
+                <li>
+                  Migrate and adapt OCR code to a new version that supports
+                  x64
+                </li>
+                <li>
+                  Investigate (very) subtle licensing issues with the new
+                  OCR version
+                </li>
+              </ul>
+
+              <p class="flow-text tech-stack">
+                C++
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <div class="divider"></div>
+
+      <article id="school-projects">
+        <h2>School Projects</h2>
+
+        <!-- University -->
+        <section class="row projects">
+          <h3>University</h3>
+
+          <!-- SPARC prime finding -->
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/primes.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">
+                  Primality Testing in SPARC Assembly
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <div class="skills">
+                  <div class="chip">SPARC</div>
+                  <div class="chip">asm</div>
+                  <div class="chip">Miller-Rabin</div>
                 </div>
               </div>
-            </div>
-
-            <!-- Mario Bros NES Emulation -->
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/mario.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator">
-                    Mario Bros NES Emulation
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <div class="skills">
-                    <div class="chip">NES</div>
-                    <div class="chip">asm</div>
-                  </div>
-                </div>
-                <div id="sparc-primality" class="card-reveal">
-                  <span class="card-title">
-                    Mario Bros NES Emulation
-                    <i class="material-icons right">close</i>
-                  </span>
-                  <p>
-                    (Greatly simplified) clone of Mario Bros with a character
-                    that can run and jump, <em>all in NES assembly</em>.
-                  </p>
-                  <p>
-                    This project made us experiment with the CISC architecture of
-                    a 6502-inspired CPU (CPU in the NES console) to get a good
-                    contrast with the RISC architecture of the SPARC. After
-                    discovering that this CPU lacks a <em>mul</em> instruction,
-                    the character's speed <em>somehow</em> ended up being a power
-                    of 2...
-                  </p>
-                  <p>
-                    This was done as the last project of a "System Programming"
-                    course.
-                  </p>
-                </div>
+              <div id="sparc-primality" class="card-reveal">
+                <span class="card-title">
+                  Primality Testing in SPARC Assembly
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>
+                  Speed competition to find prime numbers in given intervals.
+                  Won 1st place with Miller-Rabin <em>in SPARC assembly</em>.
+                  (0.53s compared to 29.61s for 2nd place), thanks to the usage
+                  of a probabilistic primality testing algorithm (though
+                  adapted to be deterministic for the given range of numbers)
+                  and careful assembly optimization.
+                </p>
+                <p>
+                  The assembly written took advantage of the registers
+                  available to reduce memory accesses, as is expected on a RISC
+                  architecture.
+                </p>
+                <p>
+                  This was done in a "System Programming" course.
+                </p>
               </div>
             </div>
+          </div>
 
-          </section>
+          <!-- Mario Bros NES Emulation -->
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/mario.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">
+                  Mario Bros NES Emulation
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <div class="skills">
+                  <div class="chip">NES</div>
+                  <div class="chip">asm</div>
+                </div>
+              </div>
+              <div id="sparc-primality" class="card-reveal">
+                <span class="card-title">
+                  Mario Bros NES Emulation
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>
+                  (Greatly simplified) clone of Mario Bros with a character
+                  that can run and jump, <em>all in NES assembly</em>.
+                </p>
+                <p>
+                  This project made us experiment with the CISC architecture of
+                  a 6502-inspired CPU (CPU in the NES console) to get a good
+                  contrast with the RISC architecture of the SPARC. After
+                  discovering that this CPU lacks a <em>mul</em> instruction,
+                  the character's speed <em>somehow</em> ended up being a power
+                  of 2...
+                </p>
+                <p>
+                  This was done as the last project of a "System Programming"
+                  course.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        </article>
+        </section>
 
-      </div>
+      </article>
 
     </div>
   </body>
