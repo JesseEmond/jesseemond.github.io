@@ -36,6 +36,8 @@ ul, ul li {
   padding-bottom: 25px;
 }
 #presentation .header img {
+  width:      148px;
+  height:     148px;
   margin-top: 35px;
 }
 #presentation .header .title {
