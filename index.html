@@ -54,7 +54,7 @@
         <h2>Work Experience</h2>
         <div>
           <!-- Native Touch internship -->
-          <div class="card-panel cyan white-text">
+          <section class="card-panel cyan white-text">
             <div class="row work-header">
 	      <div class="col offset-s3 s6 m2 valign-wrapper">
 		<div class="logo-container">
@@ -100,10 +100,10 @@
             <p class="flow-text tech-stack">
               Python, Go, sklearn
             </p>
-          </div>
+          </section>
 
           <!-- Autodesk internship -->
-          <div class="card-panel cyan white-text">
+          <section class="card-panel cyan white-text">
             <div class="row work-header">
 	      <div class="col offset-s3 s6 m2 valign-wrapper">
 		<div class="logo-container">
@@ -148,10 +148,10 @@
             <p class="flow-text tech-stack">
               Python, Qt
             </p>
-          </div>
+          </section>
 
           <!-- Morgan Stanley internship -->
-          <div class="card-panel cyan white-text">
+          <section class="card-panel cyan white-text">
 	    <div class="row work-header">
 	      <div class="col offset-s3 s6 m2 valign-wrapper">
 		<div class="logo-container">
@@ -189,10 +189,10 @@
             <p class="flow-text tech-stack">
               C#, ASP.NET, Exchange, HTML/CSS/JS
             </p>
-          </div>
+          </section>
 
           <!-- Ludia internship -->
-          <div class="card-panel cyan white-text">
+          <section class="card-panel cyan white-text">
 	    <div class="row work-header">
 	      <div class="col offset-s3 s6 m2 valign-wrapper">
 		<div class="logo-container">
@@ -240,10 +240,10 @@
             <p class="flow-text tech-stack">
               C#, WPF, C++
             </p>
-          </div>
+          </section>
 
           <!-- Coveo summer job -->
-          <div class="card-panel cyan white-text">
+          <section class="card-panel cyan white-text">
             <div class="row work-header">
 	      <div class="col offset-s3 s6 m2 valign-wrapper">
 		<div class="logo-container">
@@ -280,7 +280,7 @@
             <p class="flow-text tech-stack">
               C++
             </p>
-          </div>
+          </section>
 
         </div>
       </article>
@@ -288,95 +288,176 @@
       <div class="divider"></div>
 
       <article id="school-projects" class="container">
-        <h2>School Projects</h2>
+        <h2>Projects</h2>
 
         <!-- University -->
-        <section class="row projects">
-          <h3>University</h3>
+        <section class="card-panel cyan">
+          <h3 class="white-text">University</h3>
 
-          <!-- SPARC prime finding -->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/primes.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator">
-                  Primality Testing in SPARC Assembly
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <div class="skills">
-                  <div class="chip">SPARC</div>
-                  <div class="chip">asm</div>
-                  <div class="chip">Miller-Rabin</div>
+	  <div class="row projects">
+            <!-- Bitcoins miner -->
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light activator">
+                  <img class="activator" src="img/bitcoins.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+	            Bitcoins Pool Miner
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <div class="skills">
+                    <div class="chip">Python</div>
+                    <div class="chip">Bitcoins</div>
+                    <div class="chip">Test Coverage</div>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+	            Bitcoins Pool Miner
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+	            For a Parallel Programming course, we implemented a basic
+	            <a href="https://github.com/JesseEmond/pickaxe">Python Bitcoins Miner</a>
+	            by following the available spec. Our miners can be used in a pool to
+	            speed up the work.
+                  </p>
+                  <p>
+	            I worked on implementing the mining algorithm while my partner took care
+	            of the pool management aspect.
+                  </p>
+                  <p>
+	            I setup our repository with automated tests (100% python coverage)
+	            and we manually tested our miner on a custom network, where we
+	            successfully mined blocks.
+                  </p>
                 </div>
               </div>
-              <div id="sparc-primality" class="card-reveal">
-                <span class="card-title">
-                  Primality Testing in SPARC Assembly
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>
-                  Speed competition to find prime numbers in given intervals.
-                  Won 1st place with Miller-Rabin <em>in SPARC assembly</em>.
-                  (0.53s compared to 29.61s for 2nd place), thanks to the usage
-                  of a probabilistic primality testing algorithm (though
-                  adapted to be deterministic for the given range of numbers)
-                  and careful assembly optimization.
-                </p>
-                <p>
-                  The assembly written took advantage of the registers
-                  available to reduce memory accesses, as is expected on a RISC
-                  architecture.
-                </p>
-                <p>
-                  This was done in a "System Programming" course.
-                </p>
-              </div>
             </div>
-          </div>
 
-          <!-- Mario Bros NES Emulation -->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/mario.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator">
-                  Mario Bros NES Emulation
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <div class="skills">
-                  <div class="chip">NES</div>
-                  <div class="chip">asm</div>
+            <!-- AIgar.io -->
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/aigar.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+	            AI Competition Organization
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <div class="skills">
+                    <div class="chip">Scala</div>
+                    <div class="chip">Python</div>
+                    <div class="chip">HTML/CSS/JS</div>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+	            AI Competition Organization
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+	            As a semester project, I participated in a team of 4 to implement a framework
+	            that could be used in the context of an AI competition. We built a game called
+	            <a href="https://github.com/DrPandemic/aigar.io">AIgar.io</a> where the participants
+	            must develop an AI that will control their cells against the other participants in a
+	            game very similar in essence to
+	            <a href="http://agar.io">agar.io</a>.
+                  </p>
+                  <p>
+	            I mostly worked on the back-end: physics, game logic and sample Python AIs. We
+	            had a strong focus on automated tests and code reviews through the project.
+                  </p>
                 </div>
               </div>
-              <div id="sparc-primality" class="card-reveal">
-                <span class="card-title">
-                  Mario Bros NES Emulation
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>
-                  (Greatly simplified) clone of Mario Bros with a character
-                  that can run and jump, <em>all in NES assembly</em>.
-                </p>
-                <p>
-                  This project made us experiment with the CISC architecture of
-                  a 6502-inspired CPU (CPU in the NES console) to get a good
-                  contrast with the RISC architecture of the SPARC. After
-                  discovering that this CPU lacks a <em>mul</em> instruction,
-                  the character's speed <em>somehow</em> ended up being a power
-                  of 2...
-                </p>
-                <p>
-                  This was done as the last project of a "System Programming"
-                  course.
-                </p>
+            </div>
+
+            <!-- SPARC prime finding -->
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/primes.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+                    Primality Testing in SPARC Assembly
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <div class="skills">
+                    <div class="chip">SPARC</div>
+                    <div class="chip">asm</div>
+                    <div class="chip">Miller-Rabin</div>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    Primality Testing in SPARC Assembly
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    Speed competition to find prime numbers in given intervals.
+                    Won 1st place with Miller-Rabin <em>in SPARC assembly</em>.
+                    (0.53s compared to 29.61s for 2nd place), thanks to the usage
+                    of a probabilistic primality testing algorithm (though
+                    adapted to be deterministic for the given range of numbers)
+                    and careful assembly optimization.
+                  </p>
+                  <p>
+                    The assembly written took advantage of the registers
+                    available to reduce memory accesses, as is expected on a RISC
+                    architecture.
+                  </p>
+                  <p>
+                    This was done in a "System Programming" course.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
+            <!-- Mario Bros NES Emulation -->
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/mario.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+                    Mario Bros NES Emulation
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <div class="skills">
+                    <div class="chip">NES</div>
+                    <div class="chip">asm</div>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    Mario Bros NES Emulation
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    (Greatly simplified) clone of Mario Bros with a character
+                    that can run and jump, <em>all in NES assembly</em>.
+                  </p>
+                  <p>
+                    This project made us experiment with the CISC architecture of
+                    a 6502-inspired CPU (CPU in the NES console) to get a good
+                    contrast with the RISC architecture of the SPARC. After
+                    discovering that this CPU lacks a <em>mul</em> instruction,
+                    the character's speed <em>somehow</em> ended up being a power
+                    of 2...
+                  </p>
+                  <p>
+                    This was done as the last project of a "System Programming"
+                    course.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </section>
 
       </article>

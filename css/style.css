@@ -16,12 +16,19 @@ a {
   color: #FFD740;
   font-weight: bold;
 }
+.card a {
+  color: #00BCD4;
+}
 a:hover {
   color: #FFE57F;
 }
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
+  }
+  section.card-panel {
+    margin-left: -25px;
+    margin-right: -25px;
   }
 }
 
@@ -99,10 +106,6 @@ a:hover {
   }
 }
 @media only screen and (max-width: 600px) {
-  #work .card-panel {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
   #work .work-title {
     text-align: center;
   }
@@ -110,5 +113,7 @@ a:hover {
 
 /* projects */
 .projects .card-image img {
+  margin: auto;
+  width: auto;
   height: 350px;
 }
