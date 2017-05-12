@@ -19,9 +19,10 @@ a {
 a:hover {
   color: #FFE57F;
 }
-ul, ul li {
-  list-style-position: inside;
-  list-style-type: circle;
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
 }
 
 /* presentation */
@@ -65,61 +66,46 @@ ul, ul li {
 }
 
 /* work */
-#work {
-  padding-right: 0;
-}
 #work h3 {
-  font-size: 2.5em;
+  font-size: 5em;
 }
 #work h5 {
   font-size: 1.3em;
 }
-#work h3 small {
-  font-weight: 200;
+#work small {
+  opacity: 0.8;
+}
+#work img {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+#work .logo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 #work .tech-stack {
   font-style: italic;
 }
-.timeline {
-  position: relative;
-  padding: 0.5em 0;
-  margin-bottom: 2em;
+#work ul, #work ul li {
+  list-style-position: inside;
+  list-style-type: circle;
 }
-.timeline::before {
-  /* timeline vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 28px;
-  height: 100%;
-  width: 4px;
-  background-color: #00BCD4;
+@media only screen and (min-width: 601px) {
+  #work .work-header {
+    display: flex;
+    align-items: stretch;
+  }
 }
-.timeline img {
-  position: absolute;
-  background-color: white;
-  width: 60px;
-  height: 60px;
-}
-.timeline-block-content {
-  margin-left: 75px;
-  margin-top: 50px;
-}
-.timeline-block::before {
-  /* small allow to fake a "message" bubble */
-  content: " ";
-  position: absolute;
-  border: 7px solid transparent;
-  border-right: 7px solid #00BCD4;
-  left: 62px;
-  top: 25px;
-}
-.timeline-block-dates {
-  color: black;
-  margin-top: -50px;
-}
-.timeline-block {
-  position: relative;
+@media only screen and (max-width: 600px) {
+  #work .card-panel {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  #work .work-title {
+    text-align: center;
+  }
 }
 
 /* projects */
